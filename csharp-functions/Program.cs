@@ -50,8 +50,26 @@
                 return somma;
             }
 
+            // Creazione Array 
+            int[] CreazioneArray()
+            {
+                Console.WriteLine("indica la lunghezza dell array");
+                int nInput = Convert.ToInt32(Console.ReadLine());
+                int[] arrayNum = new int[nInput];
+                Console.WriteLine("indica i numeri da inserire nell  array");
+                for (int i = 0; i < arrayNum.Length; i++)
+                {
+                    arrayNum[i] = Convert.ToInt32(Console.ReadLine());
+                }
+                return arrayNum;
+            }
+
+
+            // Creazione Array 
+            int[] arrayNum=  CreazioneArray();
+
             // Stampa array
-            int[] arrayNum = [2, 6, 7, 5, 3, 9];
+            //int[] arrayNum = [2, 6, 7, 5, 3, 9];
             Console.WriteLine($"Array originale");
             StampaArray(arrayNum);
 
